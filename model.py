@@ -7,8 +7,6 @@ import tensorflow.contrib.slim as slim
 import inception
 
 
-
-
 class modelconfig(object):
     def __init__(self,config,iterator):
         self.iterator=iterator
