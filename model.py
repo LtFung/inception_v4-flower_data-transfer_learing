@@ -5,11 +5,9 @@ from __future__ import print_function
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 import inception
-import os
-from tensorflow.python.platform import gfile
-import argparse
-import sys
-import os
+
+
+
 
 class modelconfig(object):
     def __init__(self,config,iterator):
