@@ -36,7 +36,7 @@ image_raw_data = tf.gfile.FastGFile(file_name,'rb').read()#tensorflow中包含�
                                      scope='output')
    tvars = tf.trainable_variables()  
    
-4.模型训练，首先从生成的TFrecord数据格式中解析为tf.data.Dataset形式生成迭代器,进行后面的数据迭代训练，TFrecord数据集解析具体见datd_utils.py。训练部分主要为迭代器初始化，和tf.ConfigProto()参数设置。训练了100个step，大约40分钟
+4.模型训练，首先从生成的TFrecord数据格式中解析为tf.data.Dataset形式生成迭代器,进行后面的数据迭代训练，TFrecord数据集解析具体见datd_utils.py。训练部分主要为迭代器初始化，和tf.ConfigProto()参数设置。训练了100个step，大约40分钟。由于github上上传不了图片，最后的accuracy在86%左右～
 
 
 5.总结：代码后续继续完善，有不足的地方还请指出～谢谢=.=
