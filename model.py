@@ -33,7 +33,7 @@ class modelconfig(object):
         self.net = tf.stop_gradient(net)  # 这层与之前的层都不进行梯度更新
         print(net.shape)
         
-        with tf.variable_scope('D'):#重新建立两成全连接层
+        with tf.variable_scope('D'):#重新建立两层全连接层
             fc1 = slim.fully_connected(self.net, 512, activation_fn=tf.nn.elu,
                                        scope='fc1')
             fc = slim.fully_connected(fc1, 48, activation_fn=tf.nn.sigmoid,
