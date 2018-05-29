@@ -1,7 +1,7 @@
 # inception_v4-flower_data-transfer_learing
 inception_v4-flower_data-transferleaning
 1.下载flower_data原始数据集：[http://download.tensorflow.org/example_images/flower_photos.tgz](url)
-包含5种类别
+包含5种类别,
 inception_v4 checkpoint 下载：[https://github.com/tensorflow/models/tree/master/research/slim#Pretrained](url)
 
 2.数据集处理：生成每个class-label的TFrecord格式数据集，具体见process_data.py
